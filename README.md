@@ -88,7 +88,20 @@
                                 System.out.println(myDouble);   // Outputs 9.0
                               }
                             }
+                            
+          - Java Strings
+              - String Length
+                  -the length of a string can be found with the length() method:
+                    -tring txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                      System.out.println("The length of the txt string is: " + txt.length());
 
+                      -There are many string methods available, for example toUpperCase() and toLowerCase():
+
+                          -Example
+                           -String txt = "Hello World";
+                           -System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+                           -System.out.println(txt.toLowerCase());   // Outputs "hello world"
+                                        
 
               
 

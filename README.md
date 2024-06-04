@@ -101,9 +101,56 @@
                            -String txt = "Hello World";
                            -System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
                            -System.out.println(txt.toLowerCase());   // Outputs "hello world"
-                                        
 
-              
+
+           -Decision Structures in Java
+               -Data Structures in Java
+                    -Data structures are fundamental building blocks that define how data is organized, stored, and accessed.
+                    
+                    -Here's a scholarly overview of data structures in Java:
+
+                            
+                            Arrays:
+                            
+                            Fundamental fixed-size collections of elements of the same data type.
+                            Efficient for random access 
+                            Linked Lists:
+                           
+                            -LIFO
+                            (Last-In-First-Out) data structure, similar to a stack of plates.
+                              -Operations: push (add an element to the top), pop (remove the top element), peek (retrieve the top element without removal).
+                              Efficient for implementing undo/redo functionality, function call stacks, etc.
+                              
+                            Queues:
+                            
+                            FIFO (First-In-First-Out) data structure, similar to a waiting line.
+                            Operations: enqueue (add an element to the back), dequeue (remove the front element), peek (retrieve the front element without removal).
+                            Useful for processing tasks in a specific order, managing network requests, etc.
+                           
+                            Trees:
+
+                              Hierarchical data structures with a root node, child nodes, and potentially subtrees.
+                              Operations: insertion, deletion, searching, traversal (in-order, pre-order, post-order).
+                              Different types of trees exist: including binary search trees (BSTs), balanced trees , and heaps (priority queues).
+                              Used for efficient searching, sorting, and representing hierarchical relationships.
+                              Hash Tables:
+                              
+                              
+                              If statements
+                              
+                              
+                                  if Statements in Java
+                                  Conditional Statements and Control Flow:
+                                  
+                                  if statements are fundamental control flow structures in Java that allow you to execute code conditionally based on whether a certain condition is true or false.
+                                  They enable programs to make decisions and perform different actions depending on the state of the program or user input.
+                                 
+                                  Basic Syntax:
+                              Java
+                              int age = 25;
+                              if (age >= 18) {
+                                System.out.println("You are eligible to vote.");
+}
 
 
 

@@ -219,9 +219,73 @@ Enhanced For Loop (For-Each): Ideal for iterating over arrays and collections wi
 By using these loops effectively, you can perform repetitive tasks efficiently and keep your code clean and manageable.
 
 
+        -Methods in Java: Building Blocks of Functionality
+          -Methods, also known as functions, are essential elements in Java programming.
+              -They encapsulate a set of instructions that perform a specific task, promoting code reusability, modularity, and organization. 
+          
+          
+          Components of a Method:
+          Return type: 
+            -This specifies the data type of the value the method might return after its execution.
+             Common types include void (doesn't return anything), int, double, String, etc.
+             
+              Method name: A unique identifier that reflects the method's purpose (e.g., calculateArea, displayMessage).
+          Parameters (optional)
+          Syntax:
+                return_type method_name(parameter_list) {
+                  // method body (code to be executed)
+                }
+               
+                Java
+                public int calculateArea(int length, int width) {
+                  int area = length * width;
+                  return area; // returning the calculated area
+                }
+                
+                
+      -Java Classes and Objects
+          -Create an Object
+                An object is created from a class. 
+                To create an object of Main, specify the class name, followed by the object name, and use the keyword new:
+                
+            
+                Create an object called "myObj" and print the value of x:
+                public class Main {
+                  int x = 5;
+                
+                  public static void main(String[] args) {
+                    Main myObj = new Main();
+                    System.out.println(myObj.x);
+                  }
+                }
+              -Calling a Method:
+
+                  -Once defined, a method can be called from another part of the code using its name followed by parentheses:
+                  
+                  int myArea = calculateArea(5, 10); // Calling the method, passing arguments
+                  System.out.println("Area: " + myArea);
 
 
-
+                -Types of Methods:
+                        
+                        Void methods: 
+                          -Don't have a return type and are used to perform actions without returning a value (e.g., displayMessage).
+                        Value-returning methods: 
+                          -Return a value after execution (e.g., calculateArea).
+                        
+                        Benefits of Using Methods:
+                        Code reusability: Write code once and call it from multiple places in your program.
+                        Modularity: Break down complex programs into smaller, manageable units.
+                        Improved readability: Self-contained methods enhance code clarity.
+                        Maintainability: Easier to modify or debug specific portions of the code.
+                        
+                        Additional Concepts:
+                        Method overloading:
+                          -Defining multiple methods with the same name but different parameter lists for handling various input scenarios.
+                        Method overriding:
+                          -In inheritance, redefining a method in a subclass to provide specialized behavior.
+                        Static methods:
+                          -Methods associated with the class itself, not requiring a specific object instance to be called.
 
 
 

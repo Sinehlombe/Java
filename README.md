@@ -153,6 +153,78 @@
 }
 
 
+                      -Repetition structures (loops) 
+                          -are used similarly to other programming languages. 
+                      Java  has three primary types of loops:
+                                                            -for
+                                                            -while, 
+                                                            -do-while loops. 
+                                                            
+                            -1. For Loop
+                            The for loop is used when you know in advance how many times you want to execute a statement or a block of statements.
+                            
+                                    -Syntax:
+                                    
+                                            public class Main {
+                                              public static void main(String[] args) {
+                                                  for (int i = 0; i < 10; i++) {
+                                                      System.out.println(i);
+                                                  }                                                                 ........
+                                              }
+                                          }
+                            
+                            2. While Loop
+                            The while loop is used to repeat a block of code as long as a condition is true. If the condition is false initially, the loop may not                               execute at all.
+                            
+                            Syntax:
+
+                              public class Main {
+                                  public static void main(String[] args) {
+                                      int i = 0;
+                                      while (i < 10) { ..........
+                                          System.out.println(i);
+                                          i++;
+                                      }
+                                  }
+                              }
+                            3. Do-While Loop
+                            The do-while loop is similar to the while loop, but it guarantees that the block of code will execute at least once.
+                            
+                            public class Main {
+                                public static void main(String[] args) {
+                                    int i = 0;
+                                    do {
+                                        System.out.println(i);
+                                        i++;
+                                    } while (i < 10);
+                                }
+                            }
+                            4. Enhanced For Loop (For-Each Loop)
+                            The enhanced for loop, also known as the for-each loop, is used to iterate over arrays or collections. It simplifies the syntax and                                  eliminates the need for an index variable.
+                            
+                           
+                                  public class Main {
+                                      public static void main(String[] args) {
+                                          int[] numbers = {1, 2, 3, 4, 5};
+                                          for (int number : numbers) {
+                                              System.out.println(number);
+                                          }
+                                      }
+                                  }
+Key Points:
+For Loop: Best when the number of iterations is known in advance.
+While Loop: Useful when the number of iterations is not known and depends on a condition.
+Do-While Loop: Ensures the code block runs at least once before checking the condition.
+Enhanced For Loop (For-Each): Ideal for iterating over arrays and collections without needing an index.
+By using these loops effectively, you can perform repetitive tasks efficiently and keep your code clean and manageable.
+
+
+
+
+
+
+
+
 
 
         

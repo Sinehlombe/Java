@@ -288,6 +288,169 @@ By using these loops effectively, you can perform repetitive tasks efficiently a
                           -Methods associated with the class itself, not requiring a specific object instance to be called.
 
 
+                      -INHERITANCE
+
+                      -Inheritance a is a fundamental concept of Object-Oriented Programming (OOP) that allows one class to inherit the properties (fields) and                               behaviors (methods) of another class. The class that inherits the properties is called the subclass (or child class), and the class whose properties                         are inherited is called the superclass (or parent class).
+                        -  Here's a breakdown of the key ideas:
+                                    -Superclass (parent class):
+                                            -The general blueprint, providing the basic building blocks.
+                                            Subclass (child class): The more specific creation that inherits from the superclass and adds its own specialties.
+                                            Inheritance: The act of the subclass borrowing the properties and behaviors of the superclass.
+                                    Benefits:
+                                        Code reuse: You don't need to rewrite common code from scratch.
+                                        Real-world modeling: Classes can reflect real-world relationships (e.g., a car is a type of vehicle).
+                                
+                                        So, inheritance is like using a pre-built Lego base to create more complex and specialized things, saving time and effort while                                              maintaining a strong foundation. 
+
+
+              -Key Points of Inheritance 
+
+    Reusability: Inheritance promotes the reusability of code. Common properties and methods can be defined in a superclass and reused in multiple subclasses.
+
+    Method Overriding: Subclasses can provide specific implementations of methods that are already defined in their superclass. This is known as method overriding.
+
+    Polymorphism: Inheritance supports polymorphism, where a subclass object can be treated as an object of its superclass. This allows for flexible and dynamic code.
+
+    Types of Inheritance:
+        Single Inheritance: A subclass inherits from one superclass.
+        Multilevel Inheritance: A class is derived from another class, which is also derived from another class.
+        Hierarchical Inheritance: Multiple subclasses inherit from a single superclass.
+        Multiple Inheritance (through interfaces): Java does not support multiple inheritance with classes, but a class can implement multiple interfaces.
+
+Syntax
+
+The extends keyword is used to inherit from a class.
+
+java
+
+// Superclass
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Subclass
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();  // Inherited method
+        myDog.bark(); // Subclass-specific method
+    }
+}
+
+Example with Method Overriding
+
+java
+
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    // Overriding the makeSound method
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        Animal myDog = new Dog(); // Polymorphism
+
+        myAnimal.makeSound(); // Output: Animal makes a sound
+        myDog.makeSound();    // Output: Dog barks
+    }
+}
+
+Access Modifiers and Inheritance
+
+    private members are not accessible in subclasses.
+    protected members are accessible within the package and in subclasses.
+    public members are accessible everywhere.
+    default (no modifier) members are accessible within the same package.
+
+super Keyword
+
+The super keyword is used to refer to the immediate parent class object.
+
+    super(): Calls the constructor of the parent class.
+    super.method(): Calls the method of the parent class.
+
+
+
+class Animal {
+    Animal() {
+        System.out.println("Animal constructor");
+    }
+    
+    void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Dog extends Animal {
+    Dog() {
+        super(); // Calls the parent constructor
+        System.out.println("Dog constructor");
+    }
+    
+    void eat() {
+        super.eat(); // Calls the parent method
+        System.out.println("Dog eats");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();
+    }
+}
+
+Abstract Classes and Inheritance
+
+Abstract classes cannot be instantiated and can contain abstract methods (methods without a body) that must be implemented by subclasses.
+
+java
+
+abstract class Animal {
+    abstract void makeSound(); // Abstract method
+    
+    void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.makeSound(); // Output: Dog barks
+        myDog.eat();       // Output: Animal eats
+    }
+}
+
+Inheritance is a powerful feature in Java that helps in building a hierarchical relationship between classes and promotes code reuse and organization.
+ChatGPT can 
+
+
 
 
 

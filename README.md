@@ -450,6 +450,30 @@ public class Main {
 Inheritance is a powerful feature in Java that helps in building a hierarchical relationship between classes and promotes code reuse and organization.
 ChatGPT can 
 
+    ERROR HANDLING
+        Exceptions in Java are a mechanism for handling unexpected events that disrupt the normal flow of a program's execution during runtime. These events can arise from various sources, including:
+
+           CAN BE DUE TO SUCH
+          Coding errors: Bugs in your code, like trying to divide by zero.
+          External factors: Issues with user input, network connectivity, or  disk errors.
+          By using exceptions, you can write more robust code that can gracefully handle these situations and prevent program crashes.
+          
+          Here's a breakdown of key concepts in Java exception handling:
+          
+          Exception classes: These are blueprints for creating exception objects. Java provides a built-in hierarchy of exception classes, like ArithmeticException for math errors or IOException for input/output             issues. You can also create your custom exception classes.
+          
+          Throwing exceptions: When an error occurs, you can use the throw keyword to create an exception object and signal the error condition to the calling code.
+          
+          Try-catch block: This is the core construct for handling exceptions. The try block includes code that might throw an exception. The catch block specifies how to handle a particular exception type if it             arises within the try block. You can have multiple catch blocks to handle different exceptions.
+          
+          Checked vs. unchecked exceptions: Java categorizes exceptions into two types:
+          
+          Checked exceptions: These are exceptions that the compiler forces you to handle explicitly using a try-catch block or by declaring them in the method signature using a throws clause. Examples include               IOException or FileNotFoundException.
+          
+          Unchecked exceptions: These are exceptions that the compiler doesn't require you to handle. They typically represent runtime errors like NullPointerException (referencing a null object) or ArrayIndexOutOfBoundsException (accessing an element outside the array bounds).
+          
+          By effectively using exceptions, you can improve the reliability and maintainability of your Java programs.
+
 
 
 
